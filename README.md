@@ -97,43 +97,62 @@ Step14. click on debug and simulate using simulation as shown below
 
 ## STM 32 CUBE PROGRAM :
 
+```
+Developed by : ROHIT G
+Register number : 212222240083
+```
 
 
+
+```
+HAL_TIM_Base_Start(&htim2);
+HAL_TIM_PWM_Init(&htim2);
+HAL_TIM_PWM_Start(&htim2,TIM_CHANNEL_1);
+```
 
 
 ## Output screen shots of proteus  :
- 
+ ![image](https://github.com/DEVADARSHAN2/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/119432150/e41bc73f-248b-4eea-88e7-9a61231a2122)
+
  
  ## CIRCUIT DIAGRAM (EXPORT THE GRAPHICS TO PDF AND ADD THE SCREEN SHOT HERE): 
  
 
 ## DUTY CYCLE AND FREQUENCY CALCULATION 
-FOR PULSE AT 500
+##FOR PULSE AT 500
 
-TON = 
-TOFF=
-TOTAL TIME = 
+![image](https://github.com/DEVADARSHAN2/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/119432150/c77cf5c0-166a-45ea-a3d3-eb457cc68046)
+```
+TON = 2ms
+TOFF= 2ms
+TOTAL TIME = 4 
 FREQUENCY = 1/(TOTAL TIME)
+= 250HZ
+```
 
-FOR PULSE AT 700
+##FOR PULSE AT 700
+![image](https://github.com/DEVADARSHAN2/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/119432150/bd9966e5-8fad-4c32-b6c0-44bc3868f5f4)
 
-TON = 
-TOFF=
-TOTAL TIME = 
+
+```
+TON = 2.17ms 
+TOFF= 0.93ms
+TOTAL TIME = 3.1 
 FREQUENCY = 1/(TOTAL TIME)
+= 322.58HZ
+```
 
+##FOR PULSE AT 900
+![image](https://github.com/DEVADARSHAN2/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/119432150/f0f779e7-f0d8-40d2-8cdf-3c965ae08720)
 
-FOR PULSE AT 900
-
-TON = 
-TOFF=
-TOTAL TIME = 
+```
+TON = 3.5ms
+TOFF= 0.5ms
+TOTAL TIME = 4ms 
 FREQUENCY = 1/(TOTAL TIME)
-
+= 250HZ
+```
 
 ## Result :
 A PWM Signal is generated using the following frequency and various duty cycles are simulated 
-
-
-
 
